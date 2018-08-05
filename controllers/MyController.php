@@ -17,4 +17,8 @@ class MyController extends AppController
 //        return $this->render('index', ['hello'=>$hi, 'names'=>$names]);//"Action index";
         return $this->render('index', compact('hi', 'names', 'id'));//"Action index";
     }
+
+    public function actionBlogPost(){
+        return 'Blog Post';
+    }
 }
