@@ -9,7 +9,7 @@ use yii\web\Controller;
  */
 class UserController extends Controller{
     public function actionIndex(){
-        $this->render('index');
+        return $this->render('index');
     }
 
 
