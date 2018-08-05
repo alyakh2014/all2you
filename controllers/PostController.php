@@ -17,10 +17,10 @@ class PostController extends AppController
     public function actionIndex(){
         //$names = ['Ivanov', 'Petrov', 'Sidorov'];
         //$this->debug(Yii::$app);
-        if(Yii::$app->request->isAjax){
+       /* if(Yii::$app->request->isAjax){
             debug($_GET);
             return 'test';
-        }
+        }*/
         return $this->render('test');
     }
 
