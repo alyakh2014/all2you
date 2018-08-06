@@ -10,7 +10,7 @@ $js = <<<JS
     $('.btn').on('click', function(){
         $.ajax({
             url:'index.php?r=post/index',
-            type: 'get',
+            type: 'post',
             data: {test:'123'},
             success: function(res){
                 console.log(res);
@@ -21,6 +21,5 @@ $js = <<<JS
         })
     })
 JS;
-
 $this->registerJs($js);
 ?>
