@@ -8,6 +8,8 @@
 
 namespace app\controllers;
 use Yii;
+use yii\data\Pagination;
+use app\models\Country;
 
 class CountryController extends AppController
 {
