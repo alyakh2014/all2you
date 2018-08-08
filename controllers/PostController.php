@@ -25,6 +25,7 @@ class PostController extends AppController
     public function actionIndex(){
         //$names = ['Ivanov', 'Petrov', 'Sidorov'];
         //$this->debug(Yii::$app);
+        $this->view->title = "Все статьи";
         if(Yii::$app->request->isAjax){
             //debug($_POST);
             Yii::$app->request->post();
@@ -35,6 +36,9 @@ class PostController extends AppController
 
     public function actionShow(){
        // $this->layout = 'basic';
+        $this->view->title = "Одна статья";
+        $this->view->registerMetaTag(["name" => 'keyword', 'content'=>'Ключевики']);
+        $this->view->registerMetaTag(["name"=>'description', 'content'=>'Описание страницы']);
         return $this->render('show');
     }
 }
