@@ -35,7 +35,7 @@ class PostController extends AppController
             Yii::$app->request->post();
             return 'test';
         }
-        return $this->render('test', compact($model));
+        return $this->render('test', compact('model'));
     }
 
     public function actionShow(){
