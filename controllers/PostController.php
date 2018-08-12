@@ -27,7 +27,7 @@ class PostController extends AppController
         //$names = ['Ivanov', 'Petrov', 'Sidorov'];
         //$this->debug(Yii::$app);
 
-        $mode = new TestForm();
+        $model = new TestForm();
 
         $this->view->title = "Все статьи";
         if(Yii::$app->request->isAjax){
