@@ -8,3 +8,6 @@
 ?>
 <h1>View for Post controller and test page!</h1>
 <p>Here is the common template</p>
+<?
+debug($model);
+?>
