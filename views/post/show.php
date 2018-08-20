@@ -14,6 +14,7 @@ foreach($cats as $cat){
     echo $cat->code."; ".$cat->name."; ".$cat->population."<br>";
 }
 
+debug($catsarray);
 
 
 $js = <<<JS
