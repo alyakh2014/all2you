@@ -32,9 +32,9 @@ class PostController extends AppController
            // debug(Yii::$app->request->post());
             if($model->validate()){
                 //Данные, которые мы запросили, сразу будут удалены из сессии
-                Yii::$app->session->setFlesh('success', 'Данные приняты');
+                Yii::$app->session->setFlash('success', 'Данные приняты');
             }else{
-                Yii::$app->session->setFlesh('error', 'Ошибка');
+                Yii::$app->session->setFlash('error', 'Ошибка');
             }
         }
 

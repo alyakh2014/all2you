@@ -12,11 +12,11 @@ use yii\helpers\Html;
 <h1>View for Post controller and test page!</h1>
 <p>Here is the common template</p>
 
-<?if(Yii::$app->session->hasFlesh('success')):?>
-    <?= Yii::$app->session->getFlesh('success');?>
+<?if(Yii::$app->session->hasFlash('success')):?>
+    <?= Yii::$app->session->getFlash('success');?>
 <?endif;?>
-<?if(Yii::$app->session->hasFlesh('error')):?>
-    <?= Yii::$app->session->getFlesh('error');?>
+<?if(Yii::$app->session->hasFlash('error')):?>
+    <?= Yii::$app->session->getFlash('error');?>
 <?endif;?>
 <?$form=ActiveForm::begin();?>
 <?=$form->field($model, 'name')->label('Имя')?>
