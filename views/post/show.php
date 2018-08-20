@@ -7,7 +7,16 @@
 <button class="btn btn-success" id=""btn">Click me...</button>
 <?
 
-echo MyWidget::widget(['name'=>'Vasya']);
+MyWidget::begin();
+?>
+
+<h1>hello, world</h1>
+
+<?php
+MyWidget::end();
+
+
+//echo MyWidget::widget(['name'=>'Vasya']);
 
 //$this->registerJsFile('@web/js/script.js', ['depends'=>'yii\web\YiiAsset']);
 //$this->registerJs("$('.container').append('<p>SHOW!!!</p>');", \yii\web\View::POS_LOAD);
@@ -16,9 +25,6 @@ echo MyWidget::widget(['name'=>'Vasya']);
 foreach($cats as $cat){
     echo $cat->code."; ".$cat->name."; ".$cat->population."<br>";
 }
-
-
-
 debug($catsarray);
 debug($catsarray1);
 debug($catsarray2);
