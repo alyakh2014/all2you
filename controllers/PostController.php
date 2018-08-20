@@ -61,8 +61,8 @@ class PostController extends AppController
         $catsarray2 = Country::find()->asArray()->where(['like', 'name','ra'])->limit(1)->all();
         // = $catsarray2 = Country::find()->asArray()->where(['like', 'name','ra'])->limit(1)->one();
         $catsarray3 = Country::find()->asArray()->count();
-        $newCase = Country::findOne(['like', 'name','ra']);
-        $newCase1 = Country::findAll(['like', 'name','ra']);
+        $newCase = Country::findOne(['population'=>65097000]);
+        $newCase1 = Country::findAll(['population'=>65097000]);
         return $this->render('show', compact('cats', 'catsarray', 'catsarray1', 'catsarray2', 'catsarray3',
             'newCase', 'newCase1'));
     }
