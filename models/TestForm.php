@@ -35,7 +35,7 @@ class TestForm extends Model
         ];
     }
 
-    public function myRule($attr){
+    public function myRule($attrs){
         if(!in_array($this->$attrs, ['hello', 'world'])){
             $this->addError($attrs, 'Wrong!');
         }
