@@ -17,6 +17,7 @@ foreach($cats as $cat){
 debug($catsarray);
 debug($catsarray1);
 debug($catsarray2);
+debug($catsarray3);
 $js = <<<JS
     $('.btn').on('click', function(){
         $.ajax({
