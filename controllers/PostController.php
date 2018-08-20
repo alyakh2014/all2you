@@ -58,7 +58,7 @@ class PostController extends AppController
         $cats = Country::find()->orderBy(['name'=> SORT_ASC])->all();
         $catsarray = Country::find()->asArray()->where("code='BR'")->all();
         $catsarray1 = Country::find()->asArray()->where(['code' => 'DE'])->all();
-        $catsarray2 = Country::find()->asArray()->where(['like', 'name','ra'])->all();
+        $catsarray2 = Country::find()->asArray()->where(['like', 'name','ra'])->limit(1)->all();
         return $this->render('show', compact('cats', 'catsarray', 'catsarray1', 'catsarray2'));
     }
 }
