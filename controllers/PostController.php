@@ -56,7 +56,7 @@ class PostController extends AppController
         $this->view->registerMetaTag(["name"=>'description', 'content'=>'Описание страницы']);
 
         $cats = Country::find()->orderBy(['name'=> SORT_ASC])->all();
-        $catsarray = Country::find()->asArray()->where('code=BR')->all();
+        $catsarray = Country::find()->asArray()->where("code='BR'")->all();
         $catsarray1 = Country::find()->asArray()->where(['code' => 'DE'])->all();
         return $this->render('show', compact('cats', 'catsarray', 'catsarray1'));
     }

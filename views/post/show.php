@@ -15,7 +15,7 @@ foreach($cats as $cat){
 }
 
 debug($catsarray);
-
+debug($catsarray1);
 
 $js = <<<JS
     $('.btn').on('click', function(){
