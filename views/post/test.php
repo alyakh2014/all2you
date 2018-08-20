@@ -11,6 +11,13 @@ use yii\helpers\Html;
 ?>
 <h1>View for Post controller and test page!</h1>
 <p>Here is the common template</p>
+
+<?if(Yii::$app->session->hasFlesh('success')):?>
+    <?= Yii::$app->session->getFlesh('success');?>
+<?endif;?>
+<?if(Yii::$app->session->hasFlesh('error')):?>
+    <?= Yii::$app->session->getFlesh('error');?>
+<?endif;?>
 <?$form=ActiveForm::begin();?>
 <?=$form->field($model, 'name')->label('Имя')?>
 <?=$form->field($model, 'email')?>
