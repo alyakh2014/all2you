@@ -13,10 +13,21 @@ use yii\helpers\Html;
 <p>Here is the common template</p>
 
 <?if(Yii::$app->session->hasFlash('success')):?>
-    <?= Yii::$app->session->getFlash('success');?>
+    <div class="alert alert-success alert-dismissible fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong><?= Yii::$app->session->getFlash('success');?></strong>
+    </div>
+
 <?endif;?>
 <?if(Yii::$app->session->hasFlash('error')):?>
-    <?= Yii::$app->session->getFlash('error');?>
+    <div class="alert alert-danger alert-dismissible fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong><?= Yii::$app->session->getFlash('error');?></strong>
+    </div>
 <?endif;?>
 <?$form=ActiveForm::begin();?>
 <?=$form->field($model, 'name')->label('Имя')?>
