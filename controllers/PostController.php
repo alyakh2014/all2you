@@ -33,6 +33,7 @@ class PostController extends AppController
             if($model->validate()){
                 //Данные, которые мы запросили, сразу будут удалены из сессии
                 Yii::$app->session->setFlash('success', 'Данные приняты');
+                $this->refresh();
             }else{
                 Yii::$app->session->setFlash('error', 'Ошибка');
             }
