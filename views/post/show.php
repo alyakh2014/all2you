@@ -10,6 +10,8 @@
 //$this->registerJs("$('.container').append('<p>SHOW!!!</p>');", \yii\web\View::POS_LOAD);
 //$this->registerCss('.container{background: #ccc;}')
 
+debug($cats);
+
 $js = <<<JS
     $('.btn').on('click', function(){
         $.ajax({

@@ -7,6 +7,7 @@
  */
 
 namespace app\controllers;
+use app\models\Country;
 use Yii;
 use app\models\TestForm;
 
@@ -53,6 +54,8 @@ class PostController extends AppController
         $this->view->title = "Одна статья";
         $this->view->registerMetaTag(["name" => 'keywords', 'content'=>'Ключевики']);
         $this->view->registerMetaTag(["name"=>'description', 'content'=>'Описание страницы']);
-        return $this->render('show');
+
+        $cats = Country::find()->all();
+        return $this->render('show', compact('cats'));
     }
 }
