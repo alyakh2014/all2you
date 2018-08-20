@@ -9,10 +9,12 @@
 //$this->registerJsFile('@web/js/script.js', ['depends'=>'yii\web\YiiAsset']);
 //$this->registerJs("$('.container').append('<p>SHOW!!!</p>');", \yii\web\View::POS_LOAD);
 //$this->registerCss('.container{background: #ccc;}')
-
+echo "<br>";
 foreach($cats as $cat){
     echo $cat->code."; ".$cat->name."; ".$cat->population."<br>";
 }
+
+
 
 $js = <<<JS
     $('.btn').on('click', function(){
