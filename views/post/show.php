@@ -18,6 +18,8 @@ debug($catsarray);
 debug($catsarray1);
 debug($catsarray2);
 debug($catsarray3);
+debug($newCase);
+debug($newCase1);
 $js = <<<JS
     $('.btn').on('click', function(){
         $.ajax({
