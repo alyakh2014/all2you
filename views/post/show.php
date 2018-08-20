@@ -7,7 +7,7 @@
 <button class="btn btn-success" id=""btn">Click me...</button>
 <?
 
-echo MyWidget::widget();
+echo MyWidget::widget(['name'=>'Vasya']);
 
 //$this->registerJsFile('@web/js/script.js', ['depends'=>'yii\web\YiiAsset']);
 //$this->registerJs("$('.container').append('<p>SHOW!!!</p>');", \yii\web\View::POS_LOAD);
