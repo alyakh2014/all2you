@@ -29,10 +29,10 @@ class PostController extends AppController
         //$this->debug(Yii::$app);
 
         $model = new TestForm();
-        $model->name = "Author";
-        $model->email = 'mail@mail.com';
-        $model->text = 'Текст сообщения';
-        $model->save();
+        //$model->name = "Author";
+        //$model->email = 'mail@mail.com';
+        //$model->text = 'Текст сообщения';
+        //$model->save();
 
         if($model->load(Yii::$app->request->post())){
            // debug(Yii::$app->request->post());
