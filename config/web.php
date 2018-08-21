@@ -53,7 +53,7 @@ $config = [
             'suffix'=>'.html',
             'rules' => [
                 [
-                  'pattert'=>'',
+                  'pattern'=>'',
                   'route'=>'site/index',
                   'suffix'=> ''
                 ],
