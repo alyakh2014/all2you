@@ -28,9 +28,12 @@ class PostController extends AppController
         //$names = ['Ivanov', 'Petrov', 'Sidorov'];
         //$this->debug(Yii::$app);
 
-
-        $posts = TestForm::findOne(9);
-        $this->debug($posts);
+//Обновляем данные в БД
+        $posts = TestForm::findOne(10);
+        $posts->email = 'test@test.ru';
+        $posts->save();
+//Обновляем данные в БД
+//
         $model = new TestForm();
         //$model->name = "Author";
         //$model->email = 'mail@mail.com';
