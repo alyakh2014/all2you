@@ -36,7 +36,7 @@ class PostController extends AppController
 
         if($model->load(Yii::$app->request->post())){
            // debug(Yii::$app->request->post());
-            if($model->validate()){
+            if($model->save()){
                 //Данные, которые мы запросили, сразу будут удалены из сессии
                 Yii::$app->session->setFlash('success', 'Данные приняты');
                 return $this->refresh();
