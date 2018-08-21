@@ -1,6 +1,7 @@
 <?php
 use yii\widgets\ActiveForm;
 use yii\helpers\Html;
+use mihaildev\cdeditor\CKEditor;
 
 /**
  * Created by PhpStorm.
@@ -33,6 +34,14 @@ use yii\helpers\Html;
 <?=$form->field($model, 'name')->label('Имя')?>
 <?=$form->field($model, 'email')?>
 <?= yii\jui\DatePicker::widget(['name' => 'attributeName']) ?>
-<?=$form->field($model, 'text')->label('Сообщение')->textarea(["rows"=>10])?>
+    <?
+echo $form->field($model, 'text')->widget(CKEditor::className(),[
+    'editorOptions' => [
+    'preset' => 'full', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
+    'inline' => false, //по умолчанию false
+    ],
+    ]);
+?>
+<?//=$form->field($model, 'text')->label('Сообщение')->textarea(["rows"=>10])?>
 <?=Html::submitButton("Отправить", ['class'=>'btn btn-info'])?>
 <?ActiveForm::end();?>
