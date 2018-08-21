@@ -22,7 +22,7 @@ class MyWidget extends Widget
 
     public function run(){
         $content = ob_get_clean();
-        $content = strtoupper($content, 'utf-8');
+        $content = strtoupper($content);
        // return $this->render('my', ['name'=>$this->name]);
         return $this->render("my", compact('content'));
     }
