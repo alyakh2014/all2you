@@ -52,6 +52,11 @@ $config = [
             'enableStrictParsing'=>false,
             'suffix'=>'.html',
             'rules' => [
+                [
+                  'pattert'=>'',
+                  'route'=>'site/index',
+                  'suffix'=> ''
+                ],
                 '<action:(about|contact|login|error)>'=>'site/<action>'
             ],
         ],
