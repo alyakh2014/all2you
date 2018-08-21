@@ -50,8 +50,9 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'enableStrictParsing'=>false,
+            'suffix'=>'.html',
             'rules' => [
-                '<a:(about|contact|login|error)>'=>'site/<a>'
+                '<action:(about|contact|login|error)>'=>'site/<action>'
             ],
         ],
     ],
