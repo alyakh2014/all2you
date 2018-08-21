@@ -1,7 +1,7 @@
 <?php
 use yii\widgets\ActiveForm;
 use yii\helpers\Html;
-use mihaildev\cdeditor\CKEditor;
+use mihaildev\ckeditor\CKEditor;
 
 /**
  * Created by PhpStorm.
