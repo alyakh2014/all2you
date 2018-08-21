@@ -10,7 +10,7 @@
 MyWidget::begin();
 ?>
 
-<h1>hello, world</h1>
+<h1>привет, world</h1>
 
 <?php
 MyWidget::end();
