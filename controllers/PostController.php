@@ -35,8 +35,7 @@ class PostController extends AppController
 //Удаляем данные в БД
        // $posts->delete();
 //Удаляем несколько записей по условию
-
-        TestForm::deleteAll(['>', 'id', 5]);
+       // TestForm::deleteAll(['>', 'id', 5]);
 
 
         $model = new TestForm();
