@@ -51,6 +51,7 @@ $config = [
             'showScriptName' => false,
             'enableStrictParsing'=>false,
             'rules' => [
+                '<a:(about|contact|login|error)>'=>'site/<a>'
             ],
         ],
     ],
