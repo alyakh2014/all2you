@@ -57,6 +57,11 @@ $config = [
                   'route'=>'site/index',
                   'suffix'=> ''
                 ],
+                [
+                    'pattern'=>'',
+                    'route'=>'post/index',
+                    'suffix'=> ''
+                ],
                 '<action:(about|contact|login|error)>'=>'site/<action>'
             ],
         ],
