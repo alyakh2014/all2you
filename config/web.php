@@ -50,7 +50,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'enableStrictParsing'=>false,
-            'suffix'=>'.html',
+            //'suffix'=>'.html',
             'rules' => [
 /*                [
                   'pattern'=>'',
