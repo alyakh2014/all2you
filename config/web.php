@@ -54,7 +54,7 @@ $config = [
             'rules' => [
               [
                   'pattern'=>'',
-                  'route'=>'site/index',
+                  'route'=>'/',
                   'suffix'=> ''
                 ],
                 '<action:(about|contact|login|error)>'=>'site/<action>'
