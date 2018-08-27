@@ -28,7 +28,18 @@ class MenuWidget extends Widget
 
     public function run(){
         $this->data = Category::find()->indexBy("id")->asArray()->all();
-        debug($this->data);
+        $this->tree = $this->getTree();
+        debug($this->tree);
         return $this->tpl;
     }
+
+    protected function getTree(){
+        $tree = [];
+        foreach($this->data as $id=>&$node){
+            if(!$node['parent_id']) $tree[$id] = &$node;
+            else $this->data[$node["parent_id"]]['childs'][$node['id']] = &$node;
+        }
+        return $tree;
+    }
+
 }
