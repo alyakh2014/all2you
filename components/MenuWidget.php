@@ -27,7 +27,7 @@ class MenuWidget extends Widget
     }
 
     public function run(){
-        $this->data = Category::find()->all();
+        $this->data = Category::find()->asArray()->all();
         debug($this->data);
         return $this->tpl;
     }
