@@ -12,6 +12,8 @@ use yii\jui\Widget;
 class MenuWidget extends Widget
 {
 
+    public $tpl;
+
     function init(){
         parent::init();
         if($this->tpl === null){
