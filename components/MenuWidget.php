@@ -8,7 +8,7 @@
 
 namespace app\components;
 use yii\jui\Widget;
-use app\model\Category;
+use app\models\Category;
 
 class MenuWidget extends Widget
 {
