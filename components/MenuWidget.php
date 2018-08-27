@@ -8,11 +8,15 @@
 
 namespace app\components;
 use yii\jui\Widget;
+use app\model\Category;
 
 class MenuWidget extends Widget
 {
 
     public $tpl;
+    public $data;
+    public $tree;
+    public $menuHtml;
 
     function init(){
         parent::init();
@@ -23,6 +27,8 @@ class MenuWidget extends Widget
     }
 
     public function run(){
+        $this->data = Category::find()->all();
+        debug($this->data);
         return $this->tpl;
     }
 }
