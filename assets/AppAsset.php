@@ -36,7 +36,7 @@ class AppAsset extends AssetBundle
         "js/price-range.js",
         "js/jquery.prettyPhoto.js",
         "js/jquery.cookie.js",
-        "js/jquery.accordion.js",
+        "js/jquery.dcaccordion.2.7.js",
         "js/main.js",
        // 'js/script.js',
     ];
