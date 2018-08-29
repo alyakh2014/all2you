@@ -4,7 +4,7 @@
 
 $this->title = 'My Yii Application';
 ?>
-<?= \app\components\MenuWidget::widget(['tpl'=>'select']);?>
+<?= \app\components\MenuWidget::widget(['tpl'=>'']);?>
 <section id="slider"><!--slider-->
     <div class="container">
         <div class="row">
