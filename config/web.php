@@ -53,12 +53,12 @@ $config = [
             'suffix'=>'.html',
             'rules' => [
               [
-                  'pattern'=>'',
-                  'route'=>'/',
-                  'suffix'=> '',
+                  //'pattern'=>'',
+                  //'route'=>'/',
+                  //'suffix'=> '',
                   'category/<id:\d+>'=>'category/view'
                 ],
-                '<action:(about|contact|login|error)>'=>'site/<action>'
+                //'<action:(about|contact|login|error)>'=>'site/<action>'
             ],
         ],
     ],
