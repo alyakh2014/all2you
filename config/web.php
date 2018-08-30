@@ -56,7 +56,7 @@ $config = [
                   //'route'=>'/',
                   //'suffix'=> '',
                // ],
-                "category/<id:\d+>'=>'category/view"
+                "category/<id:\d+>"=>"category/view"
                 //'<action:(about|contact|login|error)>'=>'site/<action>'
             ],
         ],
