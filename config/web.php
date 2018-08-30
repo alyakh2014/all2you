@@ -51,12 +51,12 @@ $config = [
             'enableStrictParsing'=>false,
            // 'suffix'=>'.html',
             'rules' => [
-              [
+              //[
                   //'pattern'=>'',
                   //'route'=>'/',
                   //'suffix'=> '',
-                ],
-               // "category/<id:\d+>'=>'category/view"
+               // ],
+                "category/<id:\d+>'=>'category/view"
                 //'<action:(about|contact|login|error)>'=>'site/<action>'
             ],
         ],
