@@ -45,12 +45,11 @@ $config = [
             ],
         ],
         'db' => $db,
-
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'enableStrictParsing'=>false,
-            'suffix'=>'.html',
+           // 'suffix'=>'.html',
             'rules' => [
               [
                   //'pattern'=>'',
