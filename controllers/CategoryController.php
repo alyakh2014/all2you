@@ -15,6 +15,6 @@ use Yii;
 class CategoryController extends AppController
 {
     public function actionIndex(){
-        $this->render('index');
+        return $this->render('index');
     }
 }
