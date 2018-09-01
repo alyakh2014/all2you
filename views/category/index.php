@@ -133,6 +133,7 @@ $this->title = 'My Yii Application';
                                                 <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                             </div>
                                         </div-->
+
                                     </div>
                                     <div class="choose">
                                         <ul class="nav nav-pills nav-justified">
@@ -140,6 +141,12 @@ $this->title = 'My Yii Application';
                                             <li><a href="#"><i class="fa fa-plus-square"></i>Add to compare</a></li>
                                         </ul>
                                     </div>
+                                    <?if($hit->new):?>
+                                        <?=Html::img("@web/images/home/new.png",['alt'=>"Новинка"])?>
+                                    <?endif;?>
+                                    <?if($hit->sale):?>
+                                        <?=Html::img("@web/images/home/sale.png",['alt'=>"Распродажа"])?>
+                                    <?endif;?>
                                 </div>
                             </div>
                         <?endforeach;?>
