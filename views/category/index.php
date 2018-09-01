@@ -1,7 +1,7 @@
 <?php
 
 /* @var $this yii\web\View */
-
+use yii\helpers\Html;
 $this->title = 'My Yii Application';
 ?>
 <section id="slider"><!--slider-->
@@ -161,7 +161,7 @@ $this->title = 'My Yii Application';
                                 <div class="product-image-wrapper">
                                     <div class="single-products">
                                         <div class="productinfo text-center">
-                                            <img src="images/home/gallery1.jpg" alt="" />
+                                            <?=Html::img("@web/images/home{$hit->img}",['alt'=>$hit->name])?>
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
                                             <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
