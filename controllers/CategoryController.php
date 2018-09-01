@@ -15,6 +15,7 @@ use Yii;
 class CategoryController extends AppController
 {
     public function actionIndex(){
-        return $this->render('index');
+        $hits = Product::find()->where(['hit'=>'1'])->limit(6)->all();
+        return $this->render('index', compact('hits'));
     }
 }
