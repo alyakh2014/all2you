@@ -142,10 +142,10 @@ $this->title = 'My Yii Application';
                                         </ul>
                                     </div>
                                     <?if($hit->new):?>
-                                        <?=Html::img("@web/images/home/new.png",['alt'=>"Новинка"])?>
+                                        <?=Html::img("@web/images/home/new.png",['alt'=>"Новинка", 'class'=>'new'])?>
                                     <?endif;?>
                                     <?if($hit->sale):?>
-                                        <?=Html::img("@web/images/home/sale.png",['alt'=>"Распродажа"])?>
+                                        <?=Html::img("@web/images/home/sale.png",['alt'=>"Распродажа", 'class'=>'new'])?>
                                     <?endif;?>
                                 </div>
                             </div>
