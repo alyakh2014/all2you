@@ -61,7 +61,7 @@
                                     <?=\yii\helpers\Html::img("@web/images/shop/$product->img");?>
                                     <img src="images/shop/product12.jpg" alt="" />
                                     <h2>$<?=$product->price;?></h2>
-                                    <p><?=$product->name?></p>
+                                    <p><a href="<?=\yii\helpers\Url::to(['product/view', 'id'=>$product->id])?>"><?=$product->name?></a></p>
                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                 </div>
                             </div>
@@ -84,16 +84,16 @@
                     <div class="clearfix"></div>
                     <?endif;?>
                     <?endforeach;?>
+                        <div class="clearfix"></div>
+                        <?
+                        echo yii\widgets\LinkPager::widget([
+                            'pagination' => $pages,
+                        ]);
+                        ?>
+
                     <?else:?>
                         В этой категории пока нет товаров
                     <?endif;?>
-                    <div class="clearfix"></div>
-                    <ul class="pagination">
-                        <li class="active"><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">&raquo;</a></li>
-                    </ul>
                 </div><!--features_items-->
             </div>
         </div>
